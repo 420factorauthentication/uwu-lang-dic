@@ -1,0 +1,34 @@
+{
+    "Increment": {
+        "prefix": "inc",
+        "body": "にゃんぱすー"
+    },
+    "Decrement": {
+        "prefix": "dec",
+        "body": "ねこパンチ"
+    },
+    "Pointer Next": {
+        "prefix": "next",
+        "body": "田舎？"
+    },
+    "Pointer Back": {
+        "prefix": "back",
+        "body": "ずっとこっとん"
+    },
+    "Loop Start": {
+        "prefix": "start",
+        "body": "そしてまとめて"
+    },
+    "Loop End": {
+        "prefix": "end",
+        "body": "DYNAMITE"
+    },
+    "Output": {
+        "prefix": "out",
+        "body": "なのん"
+    },
+    "Input Get": {
+        "prefix": "in",
+        "body": "なのだ"
+    }
+}
