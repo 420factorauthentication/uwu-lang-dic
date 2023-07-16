@@ -7,9 +7,19 @@ Program written in [renchon_lang](https://github.com/bot15498/renchon_lang)
 
 
 
-Usage
------
-idk
+Build App (Windows .exe) From Source Code
+-----------------------------------------
+- Install Ruby 3.0 and Just
+- Clone this repo to `./`
+- Clone `https://github.com/bot15498/renchon_lang.git` to `./renchon_lang`
+- Install gems in `./renchon_lang` with `bundle install`
+- Install [ocra](https://github.com/larsch/ocra) with `gem install ocra`
+- Run `just build` to build app to `./app/uwu-dic.exe`
+
+
+
+App Usage
+---------
 
 
 
