@@ -2,18 +2,14 @@ call winget install Microsoft.VisualStudioCode --scope=machine --override "/SILE
 call winget install --scope=machine -e --id Git.Git
 call winget install --scope=machine -e --id GitHub.cli
 call winget install --scope=machine -e --id RubyInstallerTeam.Ruby.3.0
-call winget install --scope=machine -e --id Casey.Just
+@REM call winget install --scope=machine -e --id Casey.Just
 
-call code --install-extension skellock.just
-@echo on
+@REM call code --install-extension skellock.just
+@REM @echo on
 
-call gh repo clone https://github.com/bot15498/renchon_lang.git
-@echo on
-@cd renchon_lang
-call git pull
-@echo on
+@cd app
 call bundle install
-@cd ../
 @echo on
+@cd ../
 
-gem install ocra
+@REM gem install ocra

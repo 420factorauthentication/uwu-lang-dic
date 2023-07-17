@@ -1,4 +1,8 @@
 {
+    "files.associations": {
+        "app/list": "plaintext"
+    },
+
     // Use cmd. Powershell has problems echoing newlines
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
 

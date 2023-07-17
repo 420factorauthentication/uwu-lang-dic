@@ -1,5 +1,5 @@
-Uwu Dictionary v42069
-=====================
+Uwu Dic v42069
+==============
 A simple dictionary app for the constructed language
 [Uwu](https://www.reddit.com/r/conlangs/comments/fxvro9/an_introduction_to_uwu/)
 
@@ -7,19 +7,20 @@ Program written in [renchon_lang](https://github.com/bot15498/renchon_lang)
 
 
 
-Build App (Windows .exe) From Source Code
------------------------------------------
-- Install Ruby 3.0 and Just
-- Clone this repo to `./`
-- Clone `https://github.com/bot15498/renchon_lang.git` to `./renchon_lang`
-- Install gems in `./renchon_lang` with `bundle install`
-- Install [ocra](https://github.com/larsch/ocra) with `gem install ocra`
-- Run `just build` to build app to `./app/uwu-dic.exe`
+Requirements
+------------
+- Install Ruby
+- Clone this repo
+- `cd` into `./app` and install gems with `bundle install`
 
 
 
 App Usage
 ---------
+Note: `cd` into `./app` first
+
+`ruby renchon list`  
+Lists all dictionary entries.
 
 
 

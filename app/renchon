@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+require 'r-fxxk'
+
+class Nyaruko < Brainfuck
+  nxt '田舎？'
+  inc 'にゃんぱすー'
+  prv 'ずっとこっとん'
+  dec 'ねこパンチ'
+  opn 'そしてまとめて'
+  cls "DYNAMITE"
+  put 'なのん'
+  get 'なのだ'
+
+  # Change put encoding to UTF-8
+  def fuck(src)
+    src = compile(src)
+    ptr = 0
+    cur = 0
+    cell = Array.new(3000) { 0 }
+    output = []
+    inv = self.class.bf_mapping.invert
+    reg = Regexp.compile "(#{self.class.bf_mapping.values.map{|v| Regexp.quote(v) }.join('|')})"
+    while matches = reg.match(src, cur)
+      next_cur = nil
+      case inv[matches[1]]
+      when :nxt
+        ptr += 1
+      when :prv
+        ptr -= 1
+      when :inc
+        cell[ptr] += 1
+      when :dec
+        cell[ptr] -= 1
+      when :put
+        output << cell[ptr].chr(Encoding::UTF_8)
+      when :get
+      when :opn
+        if cell[ptr] == 0
+          open_count = 1
+          buf_cur = cur
+          while open_count > 0
+            open_count.times do
+              next_cur = src.index(self.class.bf_mapping[:cls], buf_cur)
+              open_count = src[buf_cur+1..next_cur].count(self.class.bf_mapping[:opn])
+              buf_cur = next_cur
+            end
+          end
+          next_cur = next_cur + 1
+        end
+      when :cls
+        close_count = 1
+        buf_cur = cur
+        while close_count > 0
+          close_count.times do
+            next_cur = src.rindex(self.class.bf_mapping[:opn], buf_cur)
+            close_count = src[next_cur..buf_cur-1].count(self.class.bf_mapping[:cls])
+            buf_cur = next_cur
+          end
+        end
+      end
+      cur = next_cur || src.index(reg, cur) + matches[1].length
+    end
+    output.join
+  end
+end
+
+puts Nyaruko.new.fuck(ARGF.read)
