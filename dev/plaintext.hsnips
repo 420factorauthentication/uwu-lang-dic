@@ -1,0 +1,79 @@
+snippet `inc\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "にゃんぱすー "
+    rv += "にゃんぱすー"
+``
+endsnippet
+
+snippet `dec\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "ねこパンチ "
+    rv += "ねこパンチ"
+``
+endsnippet
+
+snippet `next\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "田舎？ "
+    rv += "田舎？"
+``
+endsnippet
+
+snippet `back\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "ずっとこっとん "
+    rv += "ずっとこっとん"
+``
+endsnippet
+
+snippet `start\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "そしてまとめて "
+    rv += "そしてまとめて"
+``
+endsnippet
+
+snippet `end\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "DYNAMITE "
+    rv += "DYNAMITE"
+``
+endsnippet
+
+snippet `out\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "なのん "
+    rv += "なのん"
+``
+endsnippet
+
+snippet `in\*(\d+)=` A
+``
+    let num = parseInt(m[1]);
+    rv = "";
+    for (let i = 1; i < num; i++)
+        rv += "なのだ "
+    rv += "なのだ"
+``
+endsnippet

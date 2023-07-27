@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "app/list": "plaintext"
+        "list": "plaintext"
     },
 
     // Use cmd. Powershell has problems echoing newlines

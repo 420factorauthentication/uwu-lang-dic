@@ -24,6 +24,13 @@ Lists all dictionary entries.
 
 
 
+Dev Tools
+---------
+[VSCode HyperSnips extension](vscode:extension/draivin.hsnips)
+Copy `dev/all.hsnips` into `%APPDATA%/Code/User/hsnips/`
+
+
+
 License
 -------
 [WTFPL License](http://www.wtfpl.net/txt/copying/)
