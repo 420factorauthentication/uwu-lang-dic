@@ -20,14 +20,22 @@ App Usage
 Note: `cd` into `./app` first
 
 `ruby renchon list`  
-Lists all dictionary entries.
+Will list all dictionary entries.
+Currently does nothing.
+
+
+
+Planned Features
+----------------
+`ruby renchon query <string> [<string>...]`
+Will search all dictionary entries and list those that include the query.
 
 
 
 Dev Tools
 ---------
 [VSCode HyperSnips extension](vscode:extension/draivin.hsnips)
-Copy `dev/all.hsnips` into `%APPDATA%/Code/User/hsnips/`
+Copy `dev/plaintext.hsnips` into `%APPDATA%/Code/User/hsnips/`
 
 
 
