@@ -27,14 +27,14 @@ Currently does nothing.
 
 Planned Features
 ----------------
-`ruby renchon query <string> [<string>...]`
+`ruby renchon query <string> [<string>...]`  
 Will search all dictionary entries and list those that include the query.
 
 
 
 Dev Tools
 ---------
-[VSCode HyperSnips extension](vscode:extension/draivin.hsnips)
+[VSCode HyperSnips extension](vscode:extension/draivin.hsnips)  
 Copy `dev/plaintext.hsnips` into `%APPDATA%/Code/User/hsnips/`
 
 
